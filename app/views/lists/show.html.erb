@@ -1,6 +1,8 @@
 <h1>Details of your list</h1>
   <table>
 
+<%= cl_image_tag @list.photo.key, height: 300, width: 400, crop: :fill %>
+
   <tbody>
     <% @bookmarks.each do |bookmark| %>
       <tr>
